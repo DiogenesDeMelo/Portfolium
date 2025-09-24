@@ -69,7 +69,7 @@ st.markdown("""
     .contact-info2 {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         padding: 3rem;
-        border-radius: 15px;
+        border-radius: 10px;
         color: white;
         text-align: left;
     }
