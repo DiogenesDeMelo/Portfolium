@@ -248,6 +248,7 @@ def show_home():
     # Resumo profissional
     st.markdown("### 🎯 Resumo Profissional")
     st.write(PERSONAL_INFO["bio"])
+    st.balloons()
     
     # Estatísticas rápidas
     col1, col2, col3, col4 = st.columns(4)
