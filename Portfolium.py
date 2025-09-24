@@ -82,6 +82,19 @@ st.markdown("""
         100% { background-position: 0% 50%; }
     }
 
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f0f2f6; /* Cor de fundo */
+        color: #888888; /* Cor do texto */
+        text-align: center;
+        padding: 10px;
+        z-index: 100; /* Garante que o rodapé fica por cima de outros elementos */
+        font-size: 14px;
+    }
+
     .rainbow-text {
         background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet);
         background-size: 400% 400%;
@@ -248,7 +261,14 @@ def show_home():
     # Resumo profissional
     st.markdown("### 🎯 Resumo Profissional")
     st.write(PERSONAL_INFO["bio"])
-    st.balloons()
+    st.snow
+    st.markdown(
+    """
+    <div class="footer">
+        <p>Desenvolvido por Diógenes de Melo - 2025</p>
+    </div>
+    """, unsafe_allow_html=True
+)
     
     # Estatísticas rápidas
     col1, col2, col3, col4 = st.columns(4)
