@@ -185,7 +185,7 @@ EDUCATION = [
 def main():
     # Sidebar com navegação
     with st.sidebar:
-        st.markdown(f"<h2 class='rainbow-text' style='text-align: center;'>👨‍💻 {PERSONAL_INFO['name']}</h2>", unsafe_allow_html=True)
+        st.markdown(f"<h2 class='rainbow-text' style='text-align: center;'> <span>👨‍💻</span> {PERSONAL_INFO['name']}</h2>", unsafe_allow_html=True)
         st.markdown(f"<p style='text-align: center; color: #8b5cf6;'>{PERSONAL_INFO['title']}</p>", unsafe_allow_html=True)
         
         selected = option_menu(
