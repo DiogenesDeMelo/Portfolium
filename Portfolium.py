@@ -65,6 +65,21 @@ st.markdown("""
         color: white;
         text-align: center;
     }
+
+    @keyframes rainbow_animation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .rainbow-text {
+        background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow_animation 8s ease infinite;
+    }
+    
     
     .sidebar .sidebar-content {
         background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
@@ -170,18 +185,7 @@ EDUCATION = [
 def main():
     # Sidebar com navegação
     with st.sidebar:
-        st.markdown(f"""
-            <h2 style="
-                text-align: center;
-                background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            ">
-                👨‍💻 {PERSONAL_INFO['name']}
-            </h2>
-            """,
-            unsafe_allow_html=True
-        )
+        st.markdown(f"<h2 class='rainbow-text' style='text-align: center;'>👨‍💻 {PERSONAL_INFO['name']}</h2>", unsafe_allow_html=True)
         st.markdown(f"<p style='text-align: center; color: #8b5cf6;'>{PERSONAL_INFO['title']}</p>", unsafe_allow_html=True)
         
         selected = option_menu(
