@@ -187,6 +187,7 @@ def main():
     with st.sidebar:
         st.markdown(f"""<h2 style="text-align: center;"><span>👨‍💻</span><span class="rainbow-text"> {PERSONAL_INFO['name']}</span></h2>""",unsafe_allow_html=True)
         st.markdown(f"<p style='text-align: center; color: #8b5cf6;'>{PERSONAL_INFO['title']}</p>", unsafe_allow_html=True)
+        st.sidebar.info("Portfólio\n\nDesenvolvido por Diógenes de Melo.")
         
         selected = option_menu(
             menu_title=None,
