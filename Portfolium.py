@@ -256,7 +256,7 @@ def show_home():
         st.metric("Projetos", len(PROJECTS))
     
     with col2:
-        st.metric("Anos de Experiência", "4+")
+        st.metric("Anos de Experiência", "7+")
     
     with col3:
         st.metric("Tecnologias", len(SKILLS["Linguagens de Programação"]) + len(SKILLS["Frameworks & Bibliotecas"]))
