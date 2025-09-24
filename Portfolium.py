@@ -253,7 +253,7 @@ def show_home():
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:
-        st.image("assests/images/profile.png")
+        st.image("assets/images/profile.png")
         st.info("📸 Lalalalal")
         
     st.markdown("---")
