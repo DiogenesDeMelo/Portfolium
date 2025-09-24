@@ -254,7 +254,7 @@ def show_home():
     
     with col2:
         #st.image("assets/images/profile.png")
-        #st.info("📸 Lalalalal")
+        st.info("📸 Teste")
         
     st.markdown("---")
     
