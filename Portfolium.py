@@ -68,8 +68,8 @@ st.markdown("""
 
     .contact-info2 {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 3rem;
-        border-radius: 10px;
+        padding: 2rem;
+        border-radius: 15px;
         color: white;
         text-align: left;
     }
@@ -427,7 +427,7 @@ def show_contact():
          </div>
             """, unsafe_allow_html=True)
         
-        st.markdown(f"""
+        st.markdown("""
         <div class='contact-info2'>
             <h3>🔗 Redes Sociais</h3>
             <p><a href="{PERSONAL_INFO['linkedin']}" target="_blank" style="color: white;">LinkedIn</a></p>
