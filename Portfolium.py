@@ -261,15 +261,7 @@ def show_home():
     # Resumo profissional
     st.markdown("### 🎯 Resumo Profissional")
     st.write(PERSONAL_INFO["bio"])
-    st.snow
-    st.markdown(
-    """
-    <div class="footer">
-        <p>Desenvolvido por Diógenes de Melo - 2025</p>
-    </div>
-    """, unsafe_allow_html=True
-)
-    
+        
     # Estatísticas rápidas
     col1, col2, col3, col4 = st.columns(4)
     
