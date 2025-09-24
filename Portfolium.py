@@ -165,7 +165,7 @@ EDUCATION = [
     {
         "degree": "Bacharelado em Administração",
         "institution": "Universidade Paulista",
-        "period": "2016 - 2020",
+        "period": "2016 - 2019",
         "description": "Formação em administração de empresas."
     },
     {
@@ -187,8 +187,7 @@ def main():
     with st.sidebar:
         st.markdown(f"""<h2 style="text-align: center;"><span>👨‍💻</span><span class="rainbow-text"> {PERSONAL_INFO['name']}</span></h2>""",unsafe_allow_html=True)
         st.markdown(f"<p style='text-align: center; color: #8b5cf6;'>{PERSONAL_INFO['title']}</p>", unsafe_allow_html=True)
-        st.sidebar.info("Portfólio\n\nDesenvolvido por Diógenes de Melo.")
-        
+                
         selected = option_menu(
             menu_title=None,
             options=["Home", "Sobre Mim", "Experiências", "Projetos", "Educação", "Habilidades", "Contato"],
@@ -425,14 +424,13 @@ def show_contact():
         """, unsafe_allow_html=True)
         
         st.markdown("### 📄 Download do Currículo")
-        st.info("Adicione seu currículo em PDF na pasta assets/ e descomente a linha abaixo")
-        # with open("assets/curriculo.pdf", "rb") as file:
-        #     st.download_button(
-        #         label="📥 Baixar Currículo",
-        #         data=file,
-        #         file_name="curriculo.pdf",
-        #         mime="application/pdf"
-        #     )
+        with open("assets/curriculo.pdf", "rb") as file:
+            st.download_button(
+                label="📥 Baixar Currículo",
+                data=file,
+                file_name="curriculo.pdf",
+                mime="application/pdf"
+            )
 
 if __name__ == "__main__":
     main()
