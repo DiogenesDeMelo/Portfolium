@@ -253,8 +253,8 @@ def show_home():
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:
-        # Placeholder para foto - você pode adicionar uma imagem aqui
-        st.info("📸 Adicione sua foto profissional na pasta assets/images/profile.jpg")
+        st.image("./assests/images/profile.png")
+        st.info("📸 Lalalalal")
         
     st.markdown("---")
     
