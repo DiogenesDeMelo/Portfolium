@@ -419,6 +419,7 @@ def show_contact():
             """, unsafe_allow_html=True)
         
         st.markdown(f"""
+        <div class='contact-info'>
             <h4>🔗 Redes Sociais</h4>
             <p><a href="{PERSONAL_INFO['linkedin']}" target="_blank" style="color: white;">LinkedIn</a></p>
             <p><a href="{PERSONAL_INFO['github']}" target="_blank" style="color: white;">GitHub</a></p>
