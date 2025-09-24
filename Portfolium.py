@@ -416,12 +416,13 @@ def show_contact():
             <p><strong>Email:</strong><br>{PERSONAL_INFO['email']}</p>
             <p><strong>Telefone:</strong><br>{PERSONAL_INFO['phone']}</p>
             <p><strong>Localização:</strong><br>{PERSONAL_INFO['location']}</p>
-            
+            """, unsafe_allow_html=True)
+        
+        st.markdown(f"""
             <h4>🔗 Redes Sociais</h4>
             <p><a href="{PERSONAL_INFO['linkedin']}" target="_blank" style="color: white;">LinkedIn</a></p>
             <p><a href="{PERSONAL_INFO['github']}" target="_blank" style="color: white;">GitHub</a></p>
-        </div>
-        """, unsafe_allow_html=True)
+            """, unsafe_allow_html=True)
         
         st.markdown("### 📄 Download do Currículo")
         with open("assets/curriculo.pdf", "rb") as file:
