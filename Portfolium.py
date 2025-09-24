@@ -410,7 +410,7 @@ def show_contact():
                     st.error("Por favor, preencha todos os campos obrigatórios.")
     
     with col2:
-        st.markdown(f"""
+        st.markdown("""
         <div class='contact-info'>
             <h3>📍 Informações de Contato</h3>
             <p><strong>Email:</strong><br>{PERSONAL_INFO['email']}</p>
