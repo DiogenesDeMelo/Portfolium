@@ -68,10 +68,10 @@ st.markdown("""
 
     .contact-info2 {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 2rem;
+        padding: 3rem;
         border-radius: 15px;
         color: white;
-        text-align: center;
+        text-align: left;
     }
 
     @keyframes rainbow_animation {
@@ -428,7 +428,7 @@ def show_contact():
             """, unsafe_allow_html=True)
         
         st.markdown(f"""
-        <div class='contact-info'>
+        <div class='contact-info2'>
             <h3>🔗 Redes Sociais</h3>
             <p><a href="{PERSONAL_INFO['linkedin']}" target="_blank" style="color: white;">LinkedIn</a></p>
             <p><a href="{PERSONAL_INFO['github']}" target="_blank" style="color: white;">GitHub</a></p>
