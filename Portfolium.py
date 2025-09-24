@@ -170,7 +170,18 @@ EDUCATION = [
 def main():
     # Sidebar com navegação
     with st.sidebar:
-        st.markdown(f"<h2 style='text-align: center; color: #6366f1;'>👨‍💻 {PERSONAL_INFO['name']}</h2>", unsafe_allow_html=True)
+        st.markdown(f"""
+            <h2 style="
+                text-align: center;
+                background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            ">
+                👨‍💻 {PERSONAL_INFO['name']}
+            </h2>
+            """,
+            unsafe_allow_html=True
+        )
         st.markdown(f"<p style='text-align: center; color: #8b5cf6;'>{PERSONAL_INFO['title']}</p>", unsafe_allow_html=True)
         
         selected = option_menu(
@@ -180,7 +191,7 @@ def main():
             menu_icon="cast",
             default_index=0,
             styles={
-                "container": {"padding": "0!important", "background-color": "#02a6f7"},
+                "container": {"padding": "0!important", "background-color": "#acafb0"},
                 "icon": {"color": "#6366f1", "font-size": "18px"},
                 "nav-link": {
                     "font-size": "16px",
