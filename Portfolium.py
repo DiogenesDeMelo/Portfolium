@@ -66,6 +66,14 @@ st.markdown("""
         text-align: center;
     }
 
+    .contact-info2 {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 2rem;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+    }
+
     @keyframes rainbow_animation {
         0% { background-position: 0% 50%; }
         50% { background-position: 100% 50%; }
@@ -421,7 +429,7 @@ def show_contact():
         
         st.markdown(f"""
         <div class='contact-info'>
-            <h4>🔗 Redes Sociais</h4>
+            <h3>🔗 Redes Sociais</h3>
             <p><a href="{PERSONAL_INFO['linkedin']}" target="_blank" style="color: white;">LinkedIn</a></p>
             <p><a href="{PERSONAL_INFO['github']}" target="_blank" style="color: white;">GitHub</a></p>
             """, unsafe_allow_html=True)
