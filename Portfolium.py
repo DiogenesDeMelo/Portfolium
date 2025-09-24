@@ -74,12 +74,12 @@ st.markdown("""
 
 # Dados do portfólio (você pode editar estes dados)
 PERSONAL_INFO = {
-    "name": "Seu Nome",
+    "name": "Diógenes de Melo",
     "title": "Analista de Dados | Excel Avançado | Python | Power BI | Power Automate",
     "email": "diogenesdms@hotmail.com",
-    "phone": "+55 (61) 99999-9999",
-    "linkedin": "https://linkedin.com/in/seu-perfil",
-    "github": "https://github.com/seu-usuario",
+    "phone": "+55 (61) 98202-3243",
+    "linkedin": "https://www.linkedin.com/in/diogenesdemelo/",
+    "github": "https://github.com/DiogenesDeMelo",
     "location": "Brasília - DF, Brasil",
     "bio": """
     Profissional apaixonado por tecnologia e análise de dados, com experiência em desenvolvimento de dashboards, 
@@ -89,34 +89,32 @@ PERSONAL_INFO = {
 }
 
 SKILLS = {
-    "Linguagens de Programação": ["Python", "SQL", "JavaScript", "R"],
-    "Frameworks & Bibliotecas": ["Streamlit", "Pandas", "NumPy", "Scikit-learn", "Flask", "Django"],
-    "Ferramentas de Dados": ["Power BI", "Tableau", "Excel", "Google Analytics"],
-    "Banco de Dados": ["PostgreSQL", "MySQL", "MongoDB", "SQLite"],
-    "Cloud & DevOps": ["AWS", "Google Cloud", "Docker", "Git"]
+    "Linguagens de Programação": ["Python", "SQL"],
+    "Frameworks & Bibliotecas": ["Streamlit", "Pandas", "NumPy", "Selenium", "PyAutoGUI"],
+    "Ferramentas de Dados": ["Power BI", "Excel",]
+    
 }
 
 EXPERIENCES = [
     {
-        "title": "Analista de Dados Sênior",
-        "company": "Empresa XYZ",
+        "title": "Analista de Dados",
+        "company": "Centro Cooperativo Sicoob (CCS)",
         "period": "2022 - Presente",
-        "description": "Desenvolvimento de dashboards e análises estatísticas para suporte à tomada de decisão.",
+        "description": "Desenvolvimento de dashboards e análises estatísticas para suporte à tomada de decisão na Ouvidoria do Sicoob.",
         "achievements": [
-            "Implementação de pipeline de dados que reduziu tempo de processamento em 40%",
-            "Criação de modelos preditivos com 85% de acurácia",
-            "Liderança de equipe de 3 analistas júnior"
+            "Implementação de de automações em Power Automate que trouxe redução do trabalho em 39% o trabalho repetitivo",
+            "Criação de relatórios de suporte à diretoria",
+            "Automação e Melhoria de Planilhas de Controle com VBA e Automações com Excel Script"
         ]
     },
     {
-        "title": "Desenvolvedor Python",
-        "company": "Startup ABC",
+        "title": "Assistente de Teleatendimento",
+        "company": "Sicoob Pagamentos",
         "period": "2020 - 2022",
-        "description": "Desenvolvimento de aplicações web e automação de processos.",
+        "description": "Tratamento do Fluxo de Chargeback - Mastercard e VISA.",
         "achievements": [
-            "Desenvolvimento de API REST com Django",
-            "Automação de processos que economizou 20h/semana",
-            "Implementação de testes unitários aumentando cobertura para 90%"
+            "Criação de Dashboard de Produtividade da Equipe",
+            "Melhoria do Processo de Chargeback - VISA" 
         ]
     }
 ]
@@ -150,10 +148,10 @@ PROJECTS = [
 
 EDUCATION = [
     {
-        "degree": "Bacharelado em Ciência da Computação",
-        "institution": "Universidade XYZ",
+        "degree": "Bacharelado em Administração",
+        "institution": "Universidade Paulista",
         "period": "2016 - 2020",
-        "description": "Formação sólida em programação, algoritmos e estruturas de dados."
+        "description": "Formação em administração de empresas."
     },
     {
         "degree": "Certificação em Data Science",
@@ -182,7 +180,7 @@ def main():
             menu_icon="cast",
             default_index=0,
             styles={
-                "container": {"padding": "0!important", "background-color": "#fafafa"},
+                "container": {"padding": "0!important", "background-color": "#02a6f7"},
                 "icon": {"color": "#6366f1", "font-size": "18px"},
                 "nav-link": {
                     "font-size": "16px",
