@@ -64,6 +64,7 @@ st.markdown("""
         border-radius: 15px;
         color: white;
         text-align: center;
+        margin: 0.5rem;
     }
 
     .contact-info2 {
