@@ -416,6 +416,7 @@ def show_contact():
             <p><strong>Email:</strong><br>{PERSONAL_INFO['email']}</p>
             <p><strong>Telefone:</strong><br>{PERSONAL_INFO['phone']}</p>
             <p><strong>Localização:</strong><br>{PERSONAL_INFO['location']}</p>
+         </div>
             """, unsafe_allow_html=True)
         
         st.markdown(f"""
