@@ -72,6 +72,7 @@ st.markdown("""
         border-radius: 15px;
         color: white;
         text-align: left;
+        margin: 0.5rem;
     }
 
     @keyframes rainbow_animation {
